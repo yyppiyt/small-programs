@@ -1,3 +1,4 @@
-1,sample1
-2,sample2
-3,sample3
+IntFileNumber,NewFilename
+1,sample_text_C01.txt
+2,sample_text_C02.txt
+3,sample_text_C03.txt
