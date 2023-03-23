@@ -48,16 +48,6 @@ def change_csv_path(setup = False):
                 csv_path = remove_dot(csv_path)
                 print(f"Selected csv: {csv_path}")
                 return
-        while True:
-            ans = input("Do you want to use default csv location? (Y/N): ").lower()
-            if ans == "y" or ans == "yes":
-                csv_path = f"{os.path.dirname(os.path.abspath(__file__))}/rename.csv"
-                print(f"Selected default csv: {csv_path}")
-                return
-            elif ans == "n" or ans == "no":
-                break
-            else:
-                press_enter_to_continue("Unknown operation")
     while True:
         csv_path = input("Enter csv path: ").strip()
         if os.path.isfile(csv_path):
