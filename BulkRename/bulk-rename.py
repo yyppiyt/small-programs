@@ -64,6 +64,7 @@ def remove_dot(path: str):
 
 def update_file_list():
     global file_list
+    file_list.clear()
     temp = os.listdir(input_folder_path)
     for i in temp:
         if os.path.isfile(os.path.join(input_folder_path, i)):
